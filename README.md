@@ -28,7 +28,6 @@ Install the plugin and activate it.
 
 - Testing!
 - Optional pop-up instead of just opening in a new tab.
-- Optionally pre-fill with excerpt along with or instead of title.
 - Add to ClassicPress plugin directory.
 
 ## Changelog
