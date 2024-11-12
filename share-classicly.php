@@ -15,7 +15,7 @@
 
 // ini_set('display_errors', '1'); ini_set('error_reporting', E_ALL);
 
-
+include( "share-classicly-options.php" );
 
 function ktv_share_classicly_styles() {
 	echo <<<END
@@ -36,8 +36,7 @@ function ktv_share_classicly( $post_id ) {
 	);
 	$shareLink = "https://shareopenly.org/share/?" . http_build_query($queryParams);
 
-	// TODO better phrasing
-	$linkText  = __( 'Share this post on social media', 'ktv-share-classicly' );
+	$linkText  = __( 'Share this page on social media', 'ktv-share-classicly' );
 	$linkTitle = __( 'Share via ShareOpenly', 'ktv-share-classicly' );
 
 	$return = <<<EOT
@@ -52,8 +51,14 @@ EOT;
 
 // Add share link to single pages and posts unless it's password-protected and hasn't been opened.
 function ktv_share_classicly_add_link( $content ) {
-	// TODO option to only show on posts and not pages or vice versa.
-	if ( is_singular() && !post_password_required() ) {
+	$options = get_option( 'share_classicly_settings', array());
+	if (
+		(
+			$options['show_on_posts'] == 'true' && is_single()
+			|| $options['show_on_pages'] == 'true' && is_page()
+		)
+		&& !post_password_required()
+		) {
 		$content .= ktv_share_classicly( get_the_ID() );
 	}
 	return $content;

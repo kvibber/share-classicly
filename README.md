@@ -25,13 +25,15 @@ Install the plugin and activate it.
 
 ## TODO
 
-- Add to ClassicPress plugin directory.
+* Verify defaults on new installation.
+* Submit to ClassicPress plugin directory.
 
 ## Changelog
 
 ### [0.2] - 2024-11-11
 
 * Code cleanup, use translatable text.
+* Add option for whether to show on posts, pages or both.
 
 ### [0.1pre] - 2024-10-31
 
