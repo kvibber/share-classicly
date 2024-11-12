@@ -1,10 +1,9 @@
 # Share Classicly
 
-Stable tag: N/A  
+Stable tag: 0.2  
 Tags: sharing, fediverse, mastodon, classicpress  
-Tested up to: N/A  
 Contributors: Kelson  
-License: GPLv2 or later
+License: GPLv2 or later  
 
 Adds a link to the ShareOpenly service at the end of your posts so that readers can share to Mastodon, Bluesky, Threads and similar open social media sites.
 
@@ -26,11 +25,13 @@ Install the plugin and activate it.
 
 ## TODO
 
-- Testing!
-- Optional pop-up instead of just opening in a new tab.
 - Add to ClassicPress plugin directory.
 
 ## Changelog
+
+### [0.2] - 2024-11-11
+
+* Code cleanup, use translatable text.
 
 ### [0.1pre] - 2024-10-31
 
