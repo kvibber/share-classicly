@@ -13,7 +13,6 @@ function share_classicly_settings_init(  ) {
 			)
 		);
 	}
-	// todo update settings on upgrade/install
 
 	add_settings_section(
 		'share_classicly_settings', 

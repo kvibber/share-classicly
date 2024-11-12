@@ -23,11 +23,6 @@ There is a WordPress plugin that does something similar, but it detects when it'
 
 Install the plugin and activate it.
 
-## TODO
-
-* Verify defaults on new installation.
-* Submit to ClassicPress plugin directory.
-
 ## Changelog
 
 ### [0.2] - 2024-11-11
