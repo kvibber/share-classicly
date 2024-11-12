@@ -40,9 +40,8 @@ Install the plugin and activate it.
 * Initial prototype.
 
 [Source on Codeberg](https://codeberg.org/kvibber/share-classicly).  
-
-Nothing at these links yet:  
 [Mirror on GitHub](https://github.com/kvibber/share-classicly).  
+Nothing here yet:
 [Plugin page at ClassicPress](https://directory.classicpress.net/plugins/share-classicly).
 
 (c) 2024 [Kelson Vibber](https://kvibber.com/)
