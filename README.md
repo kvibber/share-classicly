@@ -21,7 +21,9 @@ There is a WordPress plugin that does something similar, but it detects when it'
 
 ## Installation
 
-Install the plugin and activate it.
+Add `share-classicly.zip` from the latest release using your plugin dashboard, or unzip it yourself and upload the `share-classicly` folder to `wp-content/plugins/`, or (once it's approved) install it from the ClassicPress Plugin Directory.
+
+Then just activate it. Nothing else special is needed.
 
 ## Changelog
 
