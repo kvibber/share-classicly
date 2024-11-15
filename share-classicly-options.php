@@ -40,7 +40,7 @@ function share_classicly_get_options() {
 	return array_merge( $defaults, $options );
 }
 
-// If the value is allowed, keep it
+// If the value is allowed, keep it. If missing, set it to false.
 function share_classicly_settings_validate($input) {
 	if ($input == null) {
 		$input = array();
@@ -56,8 +56,8 @@ function share_classicly_text_selection_render(  ) {
 
 	$options = share_classicly_get_options();
 	?>
-	<label><input type='checkbox' name='share_classicly_settings[show_on_posts]' <?php checked( $options['show_on_posts'] == 'true'); ?> value='true'><?php echo __('posts', 'ktv-share-classicly'); ?></label><br/>
-	<label><input type='checkbox' name='share_classicly_settings[show_on_pages]' <?php checked( $options['show_on_pages'] == 'true'); ?> value='true'><?php echo __('pages', 'ktv-share-classicly'); ?></label><br/>
+	<label><input type='checkbox' name='share_classicly_settings[show_on_posts]' <?php checked( $options['show_on_posts'] == 'true'); ?> value='true'><?php echo esc_html__('posts', 'ktv-share-classicly'); ?></label><br/>
+	<label><input type='checkbox' name='share_classicly_settings[show_on_pages]' <?php checked( $options['show_on_pages'] == 'true'); ?> value='true'><?php echo esc_html__('pages', 'ktv-share-classicly'); ?></label><br/>
 	<?php
 
 }

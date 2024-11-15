@@ -18,6 +18,7 @@
 include( "share-classicly-options.php" );
 
 function ktv_share_classicly_styles() {
+    // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	echo <<<END
 	<style>
 	.ktv-share-classicly {font-size: 0.8em}
