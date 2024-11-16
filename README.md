@@ -1,6 +1,6 @@
 # Share Classicly
 
-Stable tag: 0.2  
+Stable tag: 0.3  
 Tags: sharing, fediverse, mastodon, classicpress  
 Contributors: Kelson  
 License: GPLv2 or later  
@@ -27,9 +27,14 @@ Then just activate it. Nothing else special is needed.
 
 ## Changelog
 
+### [0.3] - 2024-11-14
+* More code cleanup.
+* Submit to plugin directory.
+
 ### [0.2] - 2024-11-11
 
-* Code cleanup, use translatable text.
+* Code cleanup.
+* Use translatable text.
 * Add option for whether to show on posts, pages or both.
 
 ### [0.1pre] - 2024-10-31
@@ -38,7 +43,6 @@ Then just activate it. Nothing else special is needed.
 
 [Source on Codeberg](https://codeberg.org/kvibber/share-classicly).  
 [Mirror on GitHub](https://github.com/kvibber/share-classicly).  
-Nothing here yet:
 [Plugin page at ClassicPress](https://directory.classicpress.net/plugins/share-classicly).
 
 (c) 2024 [Kelson Vibber](https://kvibber.com/)

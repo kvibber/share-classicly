@@ -3,7 +3,7 @@
  Plugin Name: Share Classicly
  Plugin URI: https://codeberg.org/kvibber/share-classicly
  Description: Adds a link to the Share Openly service at the end of each post, connecting it to Mastodon, Bluesky, Threads and so forth.
- Version: 0.2
+ Version: 0.3
  Requires at least: 3.0
  Requires CP: 1.0
  Requires PHP: 7.0
