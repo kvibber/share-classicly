@@ -2,8 +2,8 @@
 /*
  Plugin Name: Share Classicly
  Plugin URI: https://codeberg.org/kvibber/share-classicly
- Description: Adds a link to the Share Openly service at the end of each post, connecting it to Mastodon, Bluesky, Threads and so forth.
- Version: 0.3
+ Description: Adds a link to the Share Openly service at the end of each post, for easy sharing to Mastodon, Bluesky, Threads and so forth.
+ Version: 0.4
  Requires at least: 3.0
  Requires CP: 1.0
  Requires PHP: 7.0
@@ -28,7 +28,7 @@ END;
 add_action('wp_head','ktv_share_classicly_styles');
 
 
-function ktv_share_classicly( $post_id ) {
+function ktv_share_classicly( $post_id, $linkText ) {
 	load_plugin_textdomain('ktv-share-classicly');
 	
 	$queryParams = array(
@@ -37,12 +37,11 @@ function ktv_share_classicly( $post_id ) {
 	);
 	$shareLink = "https://shareopenly.org/share/?" . http_build_query($queryParams);
 
-	$linkText  = __( 'Share this page on social media', 'ktv-share-classicly' );
 	$linkTitle = __( 'Share via ShareOpenly', 'ktv-share-classicly' );
 
 	$return = <<<EOT
 		<div class="ktv-share-classicly">
-		<a href="$shareLink" target="shareopenly" title="$linkTitle">$linkText</a>.
+		<a href="$shareLink" target="shareopenly" title="$linkTitle">$linkText</a>
 		</div>
 EOT;
 	return $return;
@@ -60,7 +59,11 @@ function ktv_share_classicly_add_link( $content ) {
 		)
 		&& !post_password_required()
 		) {
-		$content .= ktv_share_classicly( get_the_ID() );
+		if ( array_key_exists('link_label', $options) && $options['link_label'] != '' )
+			$linkText  = esc_html($options['link_label']);
+		else
+			$linkText  = __( 'Share This Page', 'ktv-share-classicly' );
+		$content .= ktv_share_classicly( get_the_ID(), $linkText );
 	}
 	return $content;
 }
