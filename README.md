@@ -9,7 +9,7 @@ Adds a link to the ShareOpenly service at the end of your posts for easy sharing
 
 ## Description
 
-Adds a link to the [ShareOpenly](https://shareopenly.org/) service at the end of you posts so that readers can easily share them to Mastodon, Bluesky, Threads and similar open social media sites. No remote scripts or data are loaded until the visitor clicks on the link.
+Adds a link to the [ShareOpenly](https://shareopenly.org/) service at the end of your posts so that readers can easily share them to Mastodon, Bluesky, Threads and similar open social media sites. No remote scripts or data are loaded until the visitor clicks on the link.
 
 The plugin is built for ClassicPress, but will probably work fine on WordPress too.
 
