@@ -3,7 +3,7 @@
  Plugin Name: Share Classicly
  Plugin URI: https://codeberg.org/kvibber/share-classicly
  Description: Adds a link to the Share Openly service at the end of each post, for easy sharing to Mastodon, Bluesky, Threads and so forth.
- Version: 0.4
+ Version: 0.5
  Requires at least: 3.0
  Requires CP: 1.0
  Requires PHP: 7.0
@@ -49,11 +49,13 @@ EOT;
 
 
 
-// Add share link to single pages and posts unless it's password-protected and hasn't been opened.
+// Add share link to single pages and posts, unless it's password-protected and hasn't been opened.
 function ktv_share_classicly_add_link( $content ) {
 	$options = get_option( 'share_classicly_settings', array());
 	if (
-		(
+		in_the_loop()
+		&& is_main_query()
+		&& (
 			$options['show_on_posts'] == 'true' && is_single()
 			|| $options['show_on_pages'] == 'true' && is_page()
 		)

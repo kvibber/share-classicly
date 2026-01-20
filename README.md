@@ -1,6 +1,6 @@
 # Share Classicly
 
-Stable tag: 0.4  
+Stable tag: 0.5  
 Tags: sharing, fediverse, mastodon, classicpress  
 Contributors: Kelson  
 License: GPLv2 or later  
@@ -26,6 +26,9 @@ Add `share-classicly.zip` from the latest release using your plugin dashboard, o
 Then just activate it. Nothing else special is needed.
 
 ## Changelog
+
+### [0.5] - 2026-01-19
+* Fix the share link showing up when it shouldn't, like in the Fediverse view from the ActivityPub Plugin.
 
 ### [0.4] - 2024-11-23
 * Change default link text and make it customizable.
