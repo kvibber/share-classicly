@@ -51,4 +51,4 @@ Then just activate it. Nothing else special is needed.
 [Mirror on GitHub](https://github.com/kvibber/share-classicly).  
 [Plugin page at ClassicPress](https://directory.classicpress.net/plugins/share-classicly).
 
-(c) 2024 [Kelson Vibber](https://kvibber.com/)
+(c) 2024-2026 [Kelson Vibber](https://kvibber.com/)
